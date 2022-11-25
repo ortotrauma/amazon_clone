@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:amazon_clone/features/auth/screens/auth_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
     case AuthScreen.routeName:
       return MaterialPageRoute(
         settings: routeSettings,
-        bilder: (_) => const AuthScreen(),
+        builder: (_) => const AuthScreen(),
       );
-      default: 
+
+    default:
       return MaterialPageRoute(
         settings: routeSettings,
-        bilder: (_) => const Scaffold(
-          body:Center(
-            child: Text('Screen does not exist!')
+        builder: (_) => const Scaffold(
+          body: Center(
+            child: Text('Screen does not exist!'),
           ),
         ),
+      );
   }
 }
