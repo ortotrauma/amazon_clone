@@ -8,6 +8,8 @@ const DB = "mongodb+srv://ortotrauma:nov1korisnik1@cluster0.2y0ha9x.mongodb.net/
 
 app.use(express.json());
 app.use(authRouter);
+app.use(adminRouter);
+app.use(productRouter);
 
 mongoose
 .connect(DB)
