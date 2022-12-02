@@ -4,9 +4,10 @@ const adminRouter = require("./routes/admin");
 
 const authRouter = require('./routes/auth');
 const productRouter = require("./routes/product");
-const PORT = 3000;
+const userRouter = require("./routes/user");
+const PORT = process.env.PORT || 3000;
 const app = express();
-const DB = "mongodb+srv://ortotrauma:nov1korisnik1@cluster0.2y0ha9x.mongodb.net/?retryWrites=true&w=majority";
+const DB = "mongodb+srv://nedim:nedim123@cluster0.2y0ha9x.mongodb.net/?retryWrites=true&w=majority";
 
 app.use(express.json());
 app.use(authRouter);

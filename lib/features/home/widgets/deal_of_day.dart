@@ -35,6 +35,7 @@ class _DealOfDayState extends State<DealOfDay> {
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return product == null
         ? const Loader()

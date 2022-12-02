@@ -8,7 +8,7 @@ class CustomTextField extends StatelessWidget {
     Key? key,
     required this.controller,
     required this.hintText,
-    required this.maxLines,
+    this.maxLines = 1,
   }) : super(key: key);
 
   @override

@@ -4,10 +4,17 @@ import 'package:amazon_clone/router.dart';
 import 'package:flutter/material.dart';
 import 'package:amazon_clone/features/auth/screens/auth_screen.dart';
 import 'package:provider/provider.dart';
-
 import 'common/widgets/bottom_bar.dart';
 import 'features/admin/screens/admin_screen.dart';
 import 'features/auth/services/auth_service.dart';
+
+void main() {
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(
+      create: (context) => UserProvider(),
+    ),
+  ], child: const MyApp()));
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);

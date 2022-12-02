@@ -6,12 +6,9 @@ import 'package:amazon_clone/constants/global_variables.dart';
 import 'package:amazon_clone/constants/error_handling.dart';
 import 'package:provider/provider.dart';
 import 'dart:convert';
-
 import 'package:shared_preferences/shared_preferences.dart';
-
 import '../../../common/widgets/bottom_bar.dart';
 import '../../../providers/user_provider.dart';
-import '../../home/screens/home_screen.dart';
 
 class AuthService {
   void signUpUser(

@@ -4,7 +4,6 @@ import 'package:amazon_clone/features/home/widgets/carousel_image.dart';
 import 'package:amazon_clone/features/home/widgets/deal_of_day.dart';
 import 'package:amazon_clone/features/home/widgets/top_categories.dart';
 import 'package:flutter/material.dart';
-
 import '../../search/screens/search_screen.dart';
 
 class HomeScreen extends StatefulWidget {

@@ -5,7 +5,6 @@ import 'package:amazon_clone/features/search/services/search_services.dart';
 import 'package:amazon_clone/features/search/widget/searched_product.dart';
 import 'package:amazon_clone/models/product.dart';
 import 'package:flutter/material.dart';
-
 import '../../product_details/screens/product_details_screen.dart';
 
 class SearchScreen extends StatefulWidget {
